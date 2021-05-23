@@ -1,0 +1,279 @@
+/**********************HEADER**************************************/
+body {
+  background-color: rgb(243, 238, 223);
+}
+
+header {
+  position: relative;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+#logo a {
+  color: black;
+}
+
+#logo a:hover {
+  color: rgb(80, 74, 74);
+}
+
+#logo a:active {
+  color: grey;
+}
+
+#links a {
+  margin-right: 24px;
+  color: grey;
+}
+
+#links a:hover {
+  color: rgb(87, 87, 87);
+}
+
+#links a:active {
+  color: rgb(199, 199, 199);
+}
+
+header img {
+  width: 32px;
+}
+
+/************************HERO SECTION********************************/
+#pic img {
+  width: 100%;
+  height: auto;
+}
+
+/************ICON SECTION***********************/
+#icon-section {
+  background-color: rgb(243, 238, 223);
+  width: 100%;
+}
+#icon-section img {
+  max-width: 20%;
+  min-width: 10%;
+}
+#icon-section p {
+  padding-top: 1em;
+}
+
+/**********CARD HOLDER SECTION******************/
+#card-holder-section {
+  background-color: rgb(243, 238, 223);
+  width: 100%;
+}
+
+#card-holder-section img:hover {
+  cursor: pointer;
+}
+
+#card-holder-section #recent-work p {
+  border-bottom: 1px solid lightgray;
+  color: rgb(109, 109, 109);
+}
+
+/*********CARD HOLDER 2 SECTION*****************/
+#card-holder-2-section img:hover {
+  cursor: pointer;
+}
+
+#card-holder-2-section #from-the-blog p {
+  border-bottom: 1px solid lightgray;
+  color: rgb(109, 109, 109);
+}
+
+/*************NAV SECTION*********************/
+#nav-list li {
+  border-bottom: 1px solid rgb(79, 79, 79);
+  font-size: 1.1em;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-bottom: 3px;
+}
+
+#nav-list-2 li {
+  border-bottom: 1px solid rgb(79, 79, 79);
+  font-size: 1.1em;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#nav-list-2 li:hover {
+  cursor: pointer;
+  color: rgb(138, 138, 138);
+}
+
+#nav-section {
+  background-color: rgb(35, 35, 35);
+  width: 100%;
+}
+
+#nav-list {
+  color: rgb(175, 175, 175);
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#nav-list li:hover {
+  cursor: pointer;
+  color: rgb(138, 138, 138);
+}
+
+#nav-list-2 {
+  color: rgb(175, 175, 175);
+}
+
+#nav-section p {
+  color: rgb(90, 90, 90);
+}
+
+/*************************FOOTER************************/
+footer {
+  background-color: black;
+}
+
+/*********************MEDIA QUERIES********************/
+@media (max-width: 1400px) { /*Big Screens*/
+  #logo {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  #logo a {
+    padding-left: 32px;
+  }
+
+  #icon-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #logo a {
+    font-size: 38px;
+    padding-left: 60px;
+  }
+  #links a {
+    font-size: 17px;
+  }
+  #icon-section {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) { /*Medium Screens*/
+  #logo a {
+    font-size: 38px;
+    padding-left: 120px;
+  }
+  #menu {
+    padding-right: 90px;
+    padding-top: 10px;
+  }
+  #menu a {
+    margin-left: 10px;
+  }
+  #menu img {
+    width: 17px;
+  }
+
+  #icon-section img {
+    width: auto;
+    height: auto;
+  }
+
+  #recent-posts {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
+
+  #flex-0 div,
+  img {
+    width: 100%;
+  }
+  #flex-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #flex-1 div {
+    width: 50%;
+  }
+  #flex-2 div,
+  img {
+    width: 100%;
+  }
+  #flex-3 div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) { /*Small Screens (Mobile Phones)*/
+  #menu {
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+  #menu img {
+    width: 15px;
+  }
+  #menu a {
+    font-size: 14px;
+  }
+
+  #logo a {
+    font-size: 32px;
+    padding-left: 40px;
+  }
+
+  #flex-0 div,
+  img {
+    width: 100%;
+  }
+  #flex-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #flex-1 div {
+    width: 50%;
+  }
+  #flex-2 div,
+  img {
+    width: 100%;
+  }
+  #flex-3 div {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  #flex-1 div,
+  img {
+    width: 100%;
+  }
+
+  #menu {
+    padding-right: 10px;
+    padding-top: 10px;
+    margin-left: 20px;
+  }
+  #menu img {
+    width: 10px;
+  }
+  #menu a {
+    font-size: 12px;
+  }
+
+  #logo a {
+    font-size: 25px;
+    padding-left: 10px;
+  }
+
+  #icon-section img {
+    width: auto;
+    height: auto;
+  }
+
+  #nav-section div {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
